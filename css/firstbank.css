@@ -20,36 +20,37 @@ font: inherit;
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
-html{
-    font-size:62.5%;
-}
+* {
+    box-sizing: border-box;
+  }
+
+
 body{
     font-size:1.6rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;
 }
-h1, p, .name, .bio {
+h1{
     font-family: 'Raleway', sans-serif;
 color:navy;
     text-align: center;
-    margin: 4%;
+    margin: 2%;
+    font-size: 25px ;
 }
-h1{
-    font: 25px;
-    margin:0;
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color:black;
+        text-align: center;
+        margin: 2%;
+        font-size: 15px;
+
 }
-a {
-    text-decoration: none;
-    color: black;
-    font-size:2.5rem;
-}
+
 a:hover {
     font-weight: bold;
 }
-.name{
-    font-size: 150%;
-    font-weight: 200;
-}
+
 img {
     height:39rem;
     object-fit: cover;
@@ -59,29 +60,24 @@ img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 2%;
+    Padding: 20px,20px,20px,20px;
 }
 img:hover {
     opacity: 80%;
 }
-#leftbox {
-    float:left;
-    width:25%;
-    height:280px;
-}
-#middlebox{
-    float:left;
-    background:orange;
-    width:50%;
-    height:280px;
-}
-#rightbox{
-    float:right;
-    width:25%;
-    height:280px;
-}
-#skills h2 {
+
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#skills h1 {
     text-align: center;
-    padding: 10% 0;
+    font-size: 16px;
+
   }
   .contanier {
     display: flex;
@@ -89,12 +85,38 @@ img:hover {
   }
   #skills .contanier div {
     text-align: center;
-    width: 28%;
+    width: 25%;
+
   }
   #skills .contanier div p {
-    text-align: justify;
-  }
-  .footer-content {
     text-align: center;
-    padding: 20px 0;
+
+
   }
+  #leftbox {
+    float:left;
+    width:25%;
+    height:240px;
+}
+#middlebox{
+    float:left;
+    background:orange;
+    width:50%;
+    height:240px;
+
+}
+#middlebox p{
+font-size: 20px;
+text-align: center;
+justify-content: center;
+
+}
+#rightbox{
+    float:right;
+    width:25%;
+    height:180px;
+}
+
+
+
+
